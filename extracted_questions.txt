@@ -1,0 +1,1776 @@
+[
+    {
+        "id": 1,
+        "title": "1. What is the output of this code?",
+        "text": null,
+        "code": null,
+        "code2": "vector<int> v(22);\nbool b = (v[6]);\nprintf(\"%d\", !b);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 2,
+        "title": "2. Which of the following is a reason why using this line is considered a bad practice? (_Alternative_: Why is using this line considered a bad practice?)",
+        "text": null,
+        "code": null,
+        "code2": "using namespace std;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 3,
+        "title": "3. What is the smallest size a variable of the type child_t may occupy in memory?",
+        "text": null,
+        "code": null,
+        "code2": "typedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    unsigned int  size   : 2;\n}child_t;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 4,
+        "title": "4. What are the vectors v1 and v2 after executing the code?",
+        "text": null,
+        "code": null,
+        "code2": "std::vector<int> v1{1,2,3},v2;\nv2=v1;\nv1.push_back(4);\nv2.push_back(5);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 5,
+        "title": "5. Which of the following is a true statement about the difference between pointers and iterators?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "While pointers are variables that hold memory addresses, iterators are generic functions used to traverse containers. This function allows the programmer to implement read and write code as the container is traversed.",
+            "Incrementing an iterator always means accessing the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.",
+            "Pointers are variables that hold memory address whereas iterator is unsigned integers that refer to offsets in arrays.",
+            "All iterators are implemented with pointers so all iterators are pointers but not all pointers are iterators."
+        ],
+        "answer": "Incrementing an iterator always means accessing the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element."
+    },
+    {
+        "id": 6,
+        "title": "6. What's the storage occupied by u1?",
+        "text": null,
+        "code": null,
+        "code2": "union {\n    uint16_t a;\n    uint32_t b;\n    int8_t c;\n} u1;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 7,
+        "title": "7. Which of the following operator can be overloaded?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`?:`",
+            "`new`",
+            "`::`",
+            "`.`"
+        ],
+        "answer": "`new`"
+    },
+    {
+        "id": 8,
+        "title": "8. Which of the following shows the contents of the vector pointed by v1 and v2 after running this code?",
+        "text": null,
+        "code": null,
+        "code2": "std:: vector<int> *v1 = new std::vector<int>({1,2,3});\nstd:: vector<int> *v2;\nv2=v1;\nv1->push_back(4);\nv2->push_back(5);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 9,
+        "title": "9. Which of the following is not a difference between a class and a struct?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Because structs are part of the C programming language, there is some complexity between C and C++ structs. This is not the case with classes.",
+            "Classes may have member functions; structs are private.",
+            "The default access specifier for members of a struct is public, whereas, for members of the class, it is private.",
+            "Template type parameters can be declared with classes, but not with the struct keyword."
+        ],
+        "answer": "Template type parameters can be declared with classes, but not with the struct keyword."
+    },
+    {
+        "id": 10,
+        "title": "10. Suppose you need to keep a data struct with permission to access some resource based on the days of the week, but you can't use a bool variable for each day. You need to use one bit per day of the week. Which of the following is a correct implementation of a structure with bit fields for this application?",
+        "text": null,
+        "code": null,
+        "code2": "typedef struct {\n    int sunday:1;\n    int monday:1;\n    // more days\n    int friday:1;\n    int saturday:1;\n} weekdays;",
+        "choices": [
+            "A"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 11,
+        "title": "11. What is an lvalue?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "It's a constant expression, meaning an expression composed of constants and operations.",
+            "It's an expression that represents an object with an address.",
+            "It's an expression suitable for the left-hand side operand in a binary operation.",
+            "It's a location value, meaning a memory address suitable for assigning to a pointer or reference."
+        ],
+        "answer": "It's a location value, meaning a memory address suitable for assigning to a pointer or reference."
+    },
+    {
+        "id": 12,
+        "title": "12. What does auto type specifier do in this line of code (since C++11)?",
+        "text": null,
+        "code": null,
+        "code2": "auto x = 4000.22;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 13,
+        "title": "13. A class template is a \\_?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.",
+            "blank superclass intended for inheritance and polymorphism.",
+            "class that only consists of a member variable, with no constructor, destructor, or member functions.",
+            "skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used."
+        ],
+        "answer": "class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type."
+    },
+    {
+        "id": 14,
+        "title": "14. What is the ternary operator equivalent to this code snippet?",
+        "text": null,
+        "code": null,
+        "code2": "if(x)\n    y=a;\nelse\n    y=b;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 15,
+        "title": "15. What is the output of the code given below?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n\nint main(){\n    int x=10, y=20;\n    std::cout << \"x = \" << x++ << \" and y = \" << --y << std::endl;\n    std::cout << \"x = \" << x-- << \" and y = \" << ++y << std::endl;\n    return(0);\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 16,
+        "title": "16. What is the meaning of the two parts specified between parentheses in a range-based for loop, separated by a colon?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "The first is a variable declaration that will hold an element in a sequence. The second is the sequence to traverse.",
+            "The first is an iterator, and the second is the increment value to be added to the iterator.",
+            "The first is the iterating variable. The second is a `std::pair` that specifies the range (start and end) in which the variable will iterate.",
+            "The first is a container object. The second is a `std::pair` that specifies the range (start and end) in which the elements will be accessed within the loop."
+        ],
+        "answer": "The first is a variable declaration that will hold an element in a sequence. The second is the sequence to traverse."
+    },
+    {
+        "id": 17,
+        "title": "17. What is the output of the code given below?",
+        "text": null,
+        "code": null,
+        "code2": "int8_t a=200;\nuint8_t b=100;\nif(a>b)\n    std::cout<<\"greater\";\nelse\n    std::cout<<\"less\";",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 18,
+        "title": "18. What is the output of this block of code?",
+        "text": null,
+        "code": null,
+        "code2": "int8_t a=200;\nuint8_t b=100;\nstd::cout<<\"a=\"<<(int)a;\nstd::cout<<\", b=\"<<(int)b;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 19,
+        "title": "19. What is the output after executing this code snippet?",
+        "text": null,
+        "code": null,
+        "code2": "int x=5, y=2;\nif(x & y) {\n    /*_part A_*/\n}\nelse {\n    /*_part B_*/\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 20,
+        "title": "20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?",
+        "text": null,
+        "code": null,
+        "code2": "int get_length(char *str) {\n    int count=0;\n    while(str[count++]);\n    return count-1;\n}",
+        "choices": [
+            "A"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 21,
+        "title": "21. Which STL class is the best fit for implementing a collection of data that is always ordered so that the pop operation always gets the greatest of the elements? Suppose you are interested only in push and pop operations.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`std::list`",
+            "`std::vector`",
+            "`std::priority_queue`",
+            "`std::map`"
+        ],
+        "answer": "`std::priority_queue`"
+    },
+    {
+        "id": 22,
+        "title": "22. What is the meaning of the three sections specified between parentheses in a for loop separated by semicolons?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "The first is the iterating variable name, the second is the number of times to iterate, and the third is the desired increment or decrement (specified with a signed integer).",
+            "The first is the initialization block, the second is the condition to iterate, and the third is the increment block.",
+            "The first is the iterating variable, the second is the container in which it should operate, and the third is an exit condition to abort at any time.",
+            "The first is the iterating variable name, the second is the starting value for the iterating variable, and the third is the stop value (the last value plus one)."
+        ],
+        "answer": "The first is the initialization block, the second is the condition to iterate, and the third is the increment block."
+    },
+    {
+        "id": 23,
+        "title": "23. What does this code print?",
+        "text": null,
+        "code": null,
+        "code2": "int i = 0;\nprintf(\"%d\", i++);\nprintf(\"%d\", i--);\nprintf(\"%d\", ++i);\nprintf(\"%d\", --i);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 24,
+        "title": "24. What is true about the variable named `ptr`?",
+        "text": null,
+        "code": null,
+        "code2": "void *ptr;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 25,
+        "title": "25. What is the output of the code given below?",
+        "text": null,
+        "code": null,
+        "code2": "int c=3; char d='A';\nstd::printf(\"c is %d and d is %c\",c,d);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 26,
+        "title": "26. What is the output of this code?",
+        "text": null,
+        "code": null,
+        "code2": "printf(\"1/2 = %f\",(float)(1/2));",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 27,
+        "title": "27. What is the difference between a public and a private class member?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Public members are the same as global variables, so every part of the code has access to them. Private members are the same as automatic variables, so only their class has access to them.",
+            "Public members are made accessible to any running application. Private members are made accessible only to the application where the object is instantiated.",
+            "Public members will be compiled as shared variables in a multithreaded environment. Private members will be compiled as Thread-local variables.",
+            "Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class."
+        ],
+        "answer": "Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class."
+    },
+    {
+        "id": 28,
+        "title": "28. What is the value of `x` after executing this code?",
+        "text": null,
+        "code": null,
+        "code2": "int x=10, a=-3;\nx+=a;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 29,
+        "title": "29. Which statement is true?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Only classes can have member variables and methods.",
+            "C++ supports multiple inheritance.",
+            "C++ supports only single inheritance.",
+            "Only structs can inherit."
+        ],
+        "answer": "C++ supports multiple inheritance."
+    },
+    {
+        "id": 30,
+        "title": "30. Consider a pointer to void, named `ptr`, which has been set to point to a floating point variable `g`. Which choice is a valid way to dereference `ptr` to assign its pointed value to a float variable `f` later in the program?",
+        "text": null,
+        "code": null,
+        "code2": "float g;\nvoid *ptr=&g;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 31,
+        "title": "31. What is the `.*` operator and what does it do?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "It is the same as the class member access operator, or arrow operator `(->)`, which allows you to access a member of an object through a pointer to the object.",
+            "It is the pointer to the member operator, and it allows you to access a member of an object through a pointer to that specific class member.",
+            "It is the member access with an address of the operator, which returns the address of a class or struct member.",
+            "It is a combination of the member access operator `(.)` and the dereference operator `(*)`, so it allows you to access the object that a member pointer points to."
+        ],
+        "answer": "It is the pointer to the member operator, and it allows you to access a member of an object through a pointer to that specific class member."
+    },
+    {
+        "id": 32,
+        "title": "32. For these declarations, which choice shows four equivalent ways to assign the character \"y\" in the string to a char variable c?",
+        "text": null,
+        "code": null,
+        "code2": "char buff[50] = \"strings as arrays of characters are fun!\"\nchar *str = buff+11;\nchar c;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 33,
+        "title": "33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?",
+        "text": null,
+        "code": null,
+        "code2": "class Animal{\n    //....\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 34,
+        "title": "34. What is the output of this code given below?",
+        "text": null,
+        "code": null,
+        "code2": "#include <cstdio>\nusing namespace std;\n\nint main(){\n    char c = 255;\n    if(c>10)\n        printf(\"c = %i, which is greater than 10\", c);\n    else\n        printf(\"c = %i, which is less than 10\", c);\n    return 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 35,
+        "title": "35. How can C++ code call a C function?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "by simply calling the C code",
+            "There is no way for C++ to call a C function",
+            "by using extern \"C\"",
+            "by importing the source C code"
+        ],
+        "answer": "by using extern \"C\""
+    },
+    {
+        "id": 36,
+        "title": "36. Which choice is _not_ a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named `center`?",
+        "text": null,
+        "code": null,
+        "code2": "coord center;\ncenter.x = 5;\ncenter.y = 3;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 37,
+        "title": "37. Which choice does _not_ produce the same output as this code snippet? Assume the variable `i` will not be used anywhere else in the code.",
+        "text": null,
+        "code": null,
+        "code2": "for (i=1;i<10;i++){\n    cout<<i<<endl;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 38,
+        "title": "38. What does this part of a main.cpp file do?",
+        "text": null,
+        "code": null,
+        "code2": "#include \"library.h\"",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 39,
+        "title": "39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?",
+        "text": null,
+        "code": null,
+        "code2": "bool is_even(int);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 40,
+        "title": "40. Which choice is an include guard for the header file `my_library.h`?",
+        "text": null,
+        "code": null,
+        "code2": "#ifdef MY_LIBRARY_H\n#define MY_LIBRARY_H\n\n// my_library.h content\n\n#endif /* MY_LIBRARY_H */",
+        "choices": [
+            "A"
+        ],
+        "answer": null
+    },
+    {
+        "id": 41,
+        "title": "41. What's wrong with this definition when using a pre-C++11 compiler?",
+        "text": null,
+        "code": null,
+        "code2": "std::vector<std::vector<int>> thematrix;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 42,
+        "title": "42. What is the statement below equivalent to?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 43,
+        "title": "42.b. What is the statement equivalent to?",
+        "text": null,
+        "code": null,
+        "code2": "sprite->x",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 44,
+        "title": "43. Consider a class named `complexNumber`. Which code will result in an equivalent object?",
+        "text": null,
+        "code": null,
+        "code2": "complexNumber(float real, float im)\n: real_part(real),\n im_part(im){}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 45,
+        "title": "44. What is the result of executing this code snippet?",
+        "text": null,
+        "code": null,
+        "code2": "bool x=true, y=false;\n\nif (~x || y) {\n    /*part A*/\n} else {\n    /*part B*/\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 46,
+        "title": "45. What would be the output of this code?",
+        "text": null,
+        "code": null,
+        "code2": "int32_t nums[3]={2,4,3};\nstd::cout << ( nums[0] << nums[1] << nums[2] );",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 47,
+        "title": "46. What is the output of this code?",
+        "text": null,
+        "code": null,
+        "code2": "float values[5]={0.54f, 2.71828f, 3.14159f, 5.499999f, 10.0f};\nfor(auto f:values)\n    printf(\"%i \",(int)(f+0.5f));",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 48,
+        "title": "47. Which of the following STL classes is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have a lookup by name.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`std::priority_queue`",
+            "`std::list`",
+            "`std::vector`",
+            "`std::map`"
+        ],
+        "answer": "`std::map`"
+    },
+    {
+        "id": 49,
+        "title": "48. What does this program do?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main(){\n    ifstream file1(\"text1.txt\", ios::binary);\n    ofstream file2(\"text2.txt\", ios::binary);\n    file2 << file1.rdbuf();\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 50,
+        "title": "49. Which of the following is _not_ a consequence of declaring the member variable `count` of my_class as static? / Alt.: Which statement is true when declaring the member variable `count` as static?",
+        "text": null,
+        "code": null,
+        "code2": "class my_class {\n    public: static int count;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 51,
+        "title": "50. What is the assumed type of a constant represented in the source code as `0.44`?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "double",
+            "long float",
+            "long double",
+            "float"
+        ],
+        "answer": "double"
+    },
+    {
+        "id": 52,
+        "title": "51. What is an appropriate way of removing `my_object` as shown below?",
+        "text": null,
+        "code": null,
+        "code2": "my_class *my_object = new my_class();",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 53,
+        "title": "52. What is the correct way to call the `count` member function for the object pointer called `grades`?",
+        "text": null,
+        "code": null,
+        "code2": "class my_array{\n    public:\n        int count();\n};  // ... more members above\n\nint main(){\n    my_array *grades = new my_array();\n};  // ... more code above",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 54,
+        "title": "53. What would be the output of this code?",
+        "text": null,
+        "code": null,
+        "code2": "int i0=4, i1=6, i2=8;\nint& nums[3]={i2,i0,i1};\nstd::cout<<nums[0]<<nums[1]<<nums[2];",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 55,
+        "title": "54. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?",
+        "text": null,
+        "code": null,
+        "code2": "typedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    char                 : 0;\n    unsigned int  size   : 2;\n}child_t;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 56,
+        "title": "55. What is this expression equivalent to?",
+        "text": null,
+        "code": null,
+        "code2": "A->B",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 57,
+        "title": "56. What is this expression equivalent to?",
+        "text": null,
+        "code": null,
+        "code2": "A->B->C->D",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 58,
+        "title": "57. What does this function do?",
+        "text": null,
+        "code": null,
+        "code2": "auto buff = new char[50];\nstd::memset(buff,20,50);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 59,
+        "title": "58. Consider a class named `CustomData`. Which choice is a correct declaration syntax to overload the postfix `++` operator as a class member?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`CustomData& operator++();`",
+            "`void operator++(CustomData);`",
+            "`CustomData operator++(CustomData);`",
+            "`CustomData operator++(int);`"
+        ],
+        "answer": "`CustomData operator++(int);`"
+    },
+    {
+        "id": 60,
+        "title": "59. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?",
+        "text": null,
+        "code": null,
+        "code2": "std::array<uint32_t, 50> my_array;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 61,
+        "title": "60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?",
+        "text": null,
+        "code": null,
+        "code2": "void std::mutex::lock(){\n    while(!this->try_lock());\n}",
+        "choices": [
+            "A"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 62,
+        "title": "61. What is the main difference between these two Functions?",
+        "text": null,
+        "code": null,
+        "code2": "std::mutex::lock()\nstd::mutex::try_lock()",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 63,
+        "title": "62. What is the purpose of a destructor?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "It allows the programmer to write the necessary code to free the resources acquired by the object prior to deleting the object itself.",
+            "It deletes an object. One example of a destructor is the `delete()` function.",
+            "It terminates a program. This may be achieved as a regular function call or as an exception.",
+            "There are no destructors in C++."
+        ],
+        "answer": "It allows the programmer to write the necessary code to free the resources acquired by the object prior to deleting the object itself."
+    },
+    {
+        "id": 64,
+        "title": "63. What is one benefit of declaring the parameter as a `const` reference instead of declaring it as a regular object?",
+        "text": null,
+        "code": null,
+        "code2": "int calculateMedian(const my_array& a)",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 65,
+        "title": "64. What is an include guard?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "a preprocessor directive that prevents inconsistent behaviors in lines that contain the #ifdef, #ifndef, or #elif directives",
+            "a compiler option that prevents the user code from including additional libraries",
+            "a preprocessor statement that prevents a source file from being included more than once in a project",
+            "a library that adds safety features such as mutexes, watchdog timers, and assertions to the project"
+        ],
+        "answer": "a preprocessor statement that prevents a source file from being included more than once in a project"
+    },
+    {
+        "id": 66,
+        "title": "65. What would be the correct declaration of a default constructor for a class named Sprite?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "A"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 67,
+        "title": "66. What is the purpose of this line in a header file?",
+        "text": null,
+        "code": null,
+        "code2": "#pragma once",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 68,
+        "title": "67. What is a variable of type double?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "a 2-tuple",
+            "an integer number",
+            "a floating point number",
+            "a string with more than 255 characters"
+        ],
+        "answer": "a floating point number"
+    },
+    {
+        "id": 69,
+        "title": "68. Other than shifting bits to the left, what is the << operator used for?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "shifting characters to the left in a string.",
+            "inserting characters into an output stream like std::cout.",
+            "comparing floating point numbers as less-than.",
+            "assigning a variable to a reference."
+        ],
+        "answer": "inserting characters into an output stream like std::cout."
+    },
+    {
+        "id": 70,
+        "title": "69. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer to any type?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "The compiler needs the data type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and references.",
+            "`void *` does not work for any type. The language does not allow assigning anything other than `void` to a pointer to `void *`.",
+            "The compiler needs the data type to know how much memory to allocate for the pointer because different data types require different pointer lengths.",
+            "Yes, it causes a compiler error because one field is defined as having a size of 0."
+        ],
+        "answer": "The compiler needs the data type to know how much memory to allocate for the pointer because different data types require different pointer lengths."
+    },
+    {
+        "id": 71,
+        "title": "70. What is wrong with this piece of code?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nchar str[20];\nint main(){\n    std::cout << \"What's your name? \";\n    str << std::cin\n    std::cout << \"Hello, \" << str;\n    return 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 72,
+        "title": "71. When placed in a valid execution context, which statement will dynamically allocate memory from the heap for an integer of value 11?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`int anInt = new int(11);`",
+            "`int* anInt = new int[11];`",
+            "`int anInt = new int[11];`",
+            "`int* anInt = new int(11);`"
+        ],
+        "answer": "`int* anInt = new int(11);`"
+    },
+    {
+        "id": 73,
+        "title": "72. Which choice best describes the type `long`?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "an integer number of at least 32 bits",
+            "a string with more than 255 characters",
+            "a pointer",
+            "a 64-bit floating point number"
+        ],
+        "answer": "an integer number of at least 32 bits"
+    },
+    {
+        "id": 74,
+        "title": "73. Which of the following types has the closest functionality to a class?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`struct`",
+            "`union`",
+            "`enum`",
+            "`namespace`"
+        ],
+        "answer": "`struct`"
+    },
+    {
+        "id": 75,
+        "title": "74. Given these records in a map, how will you update the value for the key \"Sinead\" to 22?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 76,
+        "title": "75. Why can the std::sort receive a function object as one of its parameters?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`The std::sort function is a template. The programmer is free to enter the sorting algorithm in a function object as an argument.`",
+            "`Actually, std::sort takes only one argument, which is the container to be sorted.`",
+            "`std::sort operates on a template container. The compiler does not know how to relationally compare the values it contains, so a function must be provided to do the comparison.`",
+            "`std::sort will use the parameter function as an error handler. The function will be called if an error occurs.`"
+        ],
+        "answer": "`The std::sort function is a template. The programmer is free to enter the sorting algorithm in a function object as an argument.`"
+    },
+    {
+        "id": 77,
+        "title": "76. What will happen when you execute this code snippet?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 78,
+        "title": "77. Which access specifier does not allow class members to be accessed from outside the class, but allows them to be accessed by derived classes?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "guarded",
+            "protected",
+            "public",
+            "private"
+        ],
+        "answer": "protected"
+    },
+    {
+        "id": 79,
+        "title": "78. The default executable generation on UNIX for a C++ program is \\_",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "a.exe",
+            "a",
+            "a.out",
+            "out.a"
+        ],
+        "answer": "a.out"
+    },
+    {
+        "id": 80,
+        "title": "79. What will be the output of the following program?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nint main() {\n  int a=1;\n  cout<<(a++)*(++a)<<endl;\n  return 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 81,
+        "title": "80. What does \"c\" stand for in cout and cin?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "compiler",
+            "console",
+            "character",
+            "standard namespace"
+        ],
+        "answer": "character"
+    },
+    {
+        "id": 82,
+        "title": "81. What is the use of tellp()?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Current Input Pointer position",
+            "Current Output Pointer position",
+            "Last Input Pointer position",
+            "Last Output Pointer position"
+        ],
+        "answer": "Current Output Pointer position"
+    },
+    {
+        "id": 83,
+        "title": "82. What is callback function?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Pointer for a pointer",
+            "Pointer for a function",
+            "function for a pointer",
+            "function for a class"
+        ],
+        "answer": "Pointer for a function"
+    },
+    {
+        "id": 84,
+        "title": "83. What is the correct syntax to output \"Hello World\" in C++?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`cout << \"Hello World\";`",
+            "`System.out.println(\"Hello World\");`",
+            "`print(\"Hello World\");`",
+            "Console.WriteLine(\"Hello World\");```"
+        ],
+        "answer": "`cout << \"Hello World\";`"
+    },
+    {
+        "id": 85,
+        "title": "84. How many categories of iterators are there in C++?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "4",
+            "3",
+            "7",
+            "5"
+        ],
+        "answer": "5"
+    },
+    {
+        "id": 86,
+        "title": "85. What is the meaning of base class in C++ ?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "It inherits other class",
+            "It has a pointer variable",
+            "It is the first class declared",
+            "Another class got inherited from this class"
+        ],
+        "answer": "Another class got inherited from this class"
+    },
+    {
+        "id": 87,
+        "title": "86. The size of C++ objects is expressed in terms of multiples of the size of a ** and the size of a char is **.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "char, 4",
+            "float, 8",
+            "int, 1",
+            "char, 1"
+        ],
+        "answer": "char, 1"
+    },
+    {
+        "id": 88,
+        "title": "87. Implementation-dependent aspects about an implementation can be found in",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`<numeric>`",
+            "`<limit>`",
+            "`<limits>`",
+            "`<implementation>`"
+        ],
+        "answer": "`<limits>`"
+    },
+    {
+        "id": 89,
+        "title": "88. What is a default constructor?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "a constructor that can be used with no arguments",
+            "a constructor that does not have a return value",
+            "a constructor that is used by multiple classes",
+            "a constructor that initializes all members of a class"
+        ],
+        "answer": "a constructor that can be used with no arguments"
+    },
+    {
+        "id": 90,
+        "title": "89. When protecting a header file, why would you use '#pragma once' instead of 'include' guard?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "There is no reason to choose because they serve different purposes",
+            "An include guard uses a macro to achieve single inclusion, but the compiler cannot prevent the programmer from defining that macro elsewhere, which would result in no inclusion at all"
+        ],
+        "answer": "An include guard uses a macro to achieve single inclusion, but the compiler cannot prevent the programmer from defining that macro elsewhere, which would result in no inclusion at all"
+    },
+    {
+        "id": 91,
+        "title": "90. Which of the following statements is valid?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "We can create a new C++ operator.",
+            "We can change the precedence of the C++ operator.",
+            "We can not change the operator templates.",
+            "We can change the associativity of the C++ operators."
+        ],
+        "answer": "We can not change the operator templates."
+    },
+    {
+        "id": 92,
+        "title": "91. Which of the following is/are automatically added to every class, if we do not write our own?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Copy Constructor",
+            "Assignment Operator",
+            "A constructor without any parameter",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    },
+    {
+        "id": 93,
+        "title": "92. The if-else statement can be replaced by which operator?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "certain structure",
+            "choosing structure",
+            "selective structure",
+            "None of the Above"
+        ],
+        "answer": "selective structure"
+    },
+    {
+        "id": 94,
+        "title": "93. Which choice would be a recursive solution to the factorial n! problem?",
+        "text": null,
+        "code": null,
+        "code2": "void fact(int n) {\n    if (n <= 0)\n        return 0;\n    else\n        return 1;\n}",
+        "choices": [
+            "&shy;"
+        ],
+        "answer": null
+    },
+    {
+        "id": 95,
+        "title": "94. A class destructor can be called when a variety of situations occur. Which choice is not one of those situations?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "The program is terminated. This calls the destructor of static duration objects.",
+            "The delete () function is called for an object pointer assigned with the new operator.",
+            "The garbage collector detects that an object is no longer going to be used.",
+            "An automatic storage duration object goes out of scope."
+        ],
+        "answer": "The garbage collector detects that an object is no longer going to be used."
+    },
+    {
+        "id": 96,
+        "title": "95. You are designing a foreign exchange payments system in C++, You need to model a transaction of a currency that has an integer as its quantity and a float as its price. You then want to declare an actual object of this type. How will you achieve this?",
+        "text": null,
+        "code": null,
+        "code2": "struct currencyDeal {\n    float price;\n    int quantity;\n};\n\ncurrencyDeal firstDeal;",
+        "choices": [
+            "A"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 97,
+        "title": "96. What will happen if you attempt to call this function with checkConcatThreshold(\"a\");?",
+        "text": null,
+        "code": null,
+        "code2": "int checkConcatThreshold(string a, string b) {\n    return (a + b).length () > 120;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 98,
+        "title": "97. You need to define a C++ lambda function. You want the function to have access to only the variables that are local to it. The function should receive a single parameter, and a name, and construct a simple greeting. How will you achieve this?",
+        "text": null,
+        "code": null,
+        "code2": "auto myVeryFirstLambda = [=] (string name) {\n        return \"Hello \" + name + \"!\";\n    };",
+        "choices": [
+            "A"
+        ],
+        "answer": null
+    },
+    {
+        "id": 99,
+        "title": "98. What is the value of X after running this code?",
+        "text": null,
+        "code": null,
+        "code2": "int x=10, a=-3;\nX+=a;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 100,
+        "title": "99. Once you are done writing to a file, what method will you call on the `ofstream` to notify the operating system?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "printout()",
+            "close()",
+            "destroy()",
+            "flush()"
+        ],
+        "answer": "close()"
+    },
+    {
+        "id": 101,
+        "title": "100. Which choice is not a C++ keyword?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "static_assert",
+            "reinterpret_cast",
+            "comPl",
+            "alignas"
+        ],
+        "answer": "comPl"
+    },
+    {
+        "id": 102,
+        "title": "101. The size_in_bits function seems to take any type of parameter. This can be done by overloading the function, or by letting the compiler take care of it by writing a template. Which choice is an implementation of that template?",
+        "text": null,
+        "code": null,
+        "code2": "int main()\n{\ncout « size_in_bits(21) « endl;\ncout « size_in_bits('f') « endl;\ncout « size_in_bits(32.1f) « endl;\ncout « size_in_bits(32.1) « endl;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 103,
+        "title": "102. To use the keyboard as input the iostream library is included. To read input from files as input what library is needed?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "fstream",
+            "cstdlib",
+            "filestream",
+            "iostream"
+        ],
+        "answer": "fstream"
+    },
+    {
+        "id": 104,
+        "title": "103. What will this object-oriented program print?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Vehicle {\npublic:\n\tstring fuel = \"none\";\n};\n\nclass MotorizedVehicle : public Vehicle {\npublic:\n\tstring fuel = \"fossil\";\n};\n\nclass NextgenMotorizedVehicle : public MotorizedVehicle {\npublic:\n\tstring fuel = \"hydrogen\";\n};\n\nint main() {\n\tMotorizedVehicle aCar;\n\tcout << aCar.fuel;\n\treturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 105,
+        "title": "104. The program below is handling a stack container. What is the output of running the program?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <stack>\n\nint main()\n{\n\tstd::stack<int> stack;\n\tstack.push(1);\n\tstack.push(2);\n\tstack.push(3);\n\n\tstack.pop();\n\n\tstack.push(4);\n\n\tstack.top();\n\tstack.pop();\n\n\tstd::cout << stack.top();\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 106,
+        "title": "105. Which choice is a valid way to overload the ternary conditional operator?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "`void& operator ?:(const bool cond, const void& iftrue, const void& iffalse);`",
+            "`The ternary operator is not overloadable.`",
+            "`void& operator conditional(const bool cond, const void& iftrue, const void& iffalse);`",
+            "`void* operator ?:(const bool cond, const void* iftrue, const void* iffalse);`"
+        ],
+        "answer": "`The ternary operator is not overloadable.`"
+    },
+    {
+        "id": 107,
+        "title": "106. Which class hierarchy represents an example of multilevel inheritance?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "In the same program, at different points, a given class derives individually from more than one different class.",
+            "A first-class derives directly, at the same time, from a second and third class.",
+            "In the same program, at different points, a given class derives individually from more than two different classes.",
+            "A first classderives from a second class, and that second class is already derived from a third class"
+        ],
+        "answer": "In the same program, at different points, a given class derives individually from more than two different classes."
+    },
+    {
+        "id": 108,
+        "title": "107. Which of the following is the correct syntax to print the message in C++ language?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Out <<\"Hello world!",
+            "Cout << Hello world! ;",
+            "cout <<\"Hello world!\";",
+            "None of the above"
+        ],
+        "answer": "cout <<\"Hello world!\";"
+    },
+    {
+        "id": 109,
+        "title": "108. Consider the following program. What will be the output/error?",
+        "text": null,
+        "code": null,
+        "code2": "#include<iostream>\n#include<algorithm>\n#include<string.h>\nusing namespace std;\nbool compare(char c1, char c2){\nreturn tolower(c1) > tolower(c2);    //LINE-1\n}\nint main(){\nchar arr1[20] = \"C++ Program\", arr2[20] = \"C Program\";\ncout << lexicographical_compare(arr1, arr1+strlen(arr1), arr2, arr2+strlen(arr2),\ncompare);\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 110,
+        "title": "109. Consider the following code segment. Fill in the blank at LINE-1 so that the program will print \"not found\"?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <algorithm>\nusing namespace std;\nint main() {\nint data[] = {1,2,3,4,5};\nint key = 5;\nif(binary_search(__________))    //LINE-1\ncout << \"found\";\nelse\ncout << \"not found\";\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 111,
+        "title": "110. Consider the following code segment. What will be the output?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <algorithm>\nusing namespace std;\nint main () {\nint data[] = {50, 30, 40, 10, 20};\nsort (&data[1], &data[4]);\nfor (int i = 0; i < 5; i++)\ncout << data[i] << \" \";\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 112,
+        "title": "111. Consider the following code segment. What will be the output?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <algorithm>\nusing namespace std;\nint main() {\nint element[5];\nfor(int i = 1; i <= 5; i++)\n*(element + i - 1) = i * 5;\nrotate(element, element + 4, element + 5);\nrotate(element, element + 1, element + 4);\nfor (int i = 0; i < 5; ++i)\ncout << element[i] << \" \";\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 113,
+        "title": "112. Consider the following code segment. What will be the output?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\nconst int size = 3, c = 65;\nvector<char> vc(size, ’A’);\nfor (int i = 1; i <= 2; i++)\nvc.push_back(65 + i);\nvc.resize(10, 90);\nvc.resize(8);\nfor (int i = 0; i < vc.size(); i++)\ncout << vc[i] << \" \";\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 114,
+        "title": "113. Consider the following code segment. Choose the appropriate option to fill in the blank at LINE-1, such that the output of the code would be: a C++ Program.",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <string>\nusing namespace std;\nint main(void) {\nstring s1 = \"C++ \";\nstring s2 = \"Program\";\n__________________;    //LINE-1\ncout << s1;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 115,
+        "title": "114. Consider the following code segment. Fill in the blank at LINE-1 such that the output is 5 2 3 4 5",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <algorithm>\nusing namespace std;\nint main() {\nint data[] = { 1, 2, 3, 4, 5 };\nfor (int i = 0; i < 1; i++) {\nint j = data[i];\nreplace(data, data + 5, j, *(_________________));    //LINE-1\n}\nfor (int i = 0; i < 5; ++i)\ncout << data[i] << \" \";\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 116,
+        "title": "115. Consider the following code segment. What will be the output?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\n#include <cstring>\n#include <stack>\nusing namespace std;\nint main(){\nchar str[10] = \"123456789\";\nstack<char> s1, s2;\nint i;\nfor(i = 0; i < strlen(str)/2; i++)\ns1.push(str[i]);\nfor(i=i-1; i < strlen(str); i++)\ns2.push(str[i]);\nwhile (!s1.empty()) {\ns2.push(s1.top()); s1.pop();\n}\nwhile (!s2.empty()) {\ncout << s2.top(); s2.pop();\n}\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 117,
+        "title": "116. Consider the following code segment. Which statement/statements is/are correct?",
+        "text": null,
+        "code": null,
+        "code2": "int i = 5;\nconst int *p = &i;\nint * const q = &i;\nint const *r = &i;\nint const * const s = &i;\n*p = 10; //STMT-1\n*q = 10; //STMT-2\n*r = 10; //STMT-3\n*s = 10; //STMT-4",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 118,
+        "title": "117. Consider the following program. What will be the output/error(s)?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nchar add(char c1 = ’a’) { return c1; }\nchar add(char c1 = ’a’, char c2 = ’b’) { return c1 + c2 - ’a’;}\nchar add(char c1 = ’a’, int d1 = 100){ return c1 + d1 - ’a’; }\nchar add(char c1 = ’a’, char c2 = ’b’, char c3) { return c1 + c2 + c3 - ’a’; }\nint main() {\nchar c = add(’o’, ’k’);\ncout << c << endl;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 119,
+        "title": "118. Consider the following code segment. What will be the output?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\n#define SQR(x) (x)*(x)\nint main() {\nint a=3;\ncout << SQR(a++) << endl;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 120,
+        "title": "119. Consider the following code segment. Which line/s will give you an error?",
+        "text": null,
+        "code": null,
+        "code2": "#include<iostream>\n#define X 1\nusing namespace std;\nint main(){\nint i;\nconst int i1 = 2;\nconst int i2 = i1; //LINE-1\ni2 = X;\ni = i1;\ni1 = i;\nreturn 0;\n//LINE-2\n//LINE-3\n//LINE-4\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 121,
+        "title": "120. Consider the following code segment. What will be the output/error?",
+        "text": null,
+        "code": null,
+        "code2": "#include<iostream>\nusing namespace std;\nint main(){\nint a = 5;\nint &b = a+1;\na = a*b;\ncout << a << \" \" << b;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 122,
+        "title": "121. Consider the following code segment. What will be the output?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nint& func(int& i) {     //LINE-1\nreturn i = i+5;\n}\nint main() {\nint x = 1, y = 2;\nint& z = func(x);\ncout << x << \" \" << z << \" \";\nfunc(x) = y;\ncout << x << \" \" << z;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 123,
+        "title": "122. Consider the following code segment. Choose the appropriate option to fill in the blanks at LINE-1, such that the output of the code would be: 300 20000.",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nvoid compute(int n1, int n2, ________, ________){ //LINE-1\nn3 = n1 + n2;\n*n4 = n1 * n2;\n}\nint main(){\nint a = 100, b = 200, c = 0, d = 0;\ncompute(a, b, c, &d); //LINE-2\ncout << c << \", \";\ncout << d;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 124,
+        "title": "123. Consider the following code segment. What will be the output/error?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nint main() {\nint a = 2, *b;\n*b = 5;\nint * const ptr;    // LINE-1\n// LINE-2\nptr = b;\ncout << *ptr;\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 125,
+        "title": "124. Consider the following code segment. What will be the output/error?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nvoid fun(int a = 5) { cout << a << endl; }\n//LINE-1\nint fun(int x = 10) { cout << x << endl; return 0; }    //LINE-2\nint main() {\nfun();\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 126,
+        "title": "125. Consider the following code segment. Fill in the blank at LINE-1 such that the program will print 5 + i3",
+        "text": null,
+        "code": null,
+        "code2": "#include<iostream>\nusing namespace std;\nstruct complex{\nint re, im;\nvoid show(){ cout << re << \" + i\" << im; }\n};\n______________________________________{ //Line-1\nc2.re = c1.re+c2.re;\nc2.im = c1.im+c2.im;\nreturn c2;\n}\nint main(){\nstruct complex c1={2,5},c2{3,-2};\nstruct complex t = c1 + c2;\nt.show();\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 127,
+        "title": "126. Consider the following program. Which line/s will generate an error?",
+        "text": null,
+        "code": null,
+        "code2": "#include<iostream>\nusing namespace std;\nclass myClass{\nint pra = 5;\npublic:\nint pub = 10;\nvoid set_pr(int x){ pra = x; }\nvoid set_pu(int x){ pub = x; }\n};\nint main(){\nmyClass m;\nint a, b;\na = m.pra; //LINE-1\nb = m.pub; //LINE-2\nm.set_pr(100); //LINE-3\nm.set_pu(200); //LINE-4\nreturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 128,
+        "title": "127. Consider the following class. Fill in the blanks with proper access specifiers so that member y can be accessed from outside of the class but member x cannot be accessed.",
+        "text": null,
+        "code": null,
+        "code2": "class Test{\n________:\nint x;\n________:\nint y;\n/* Some more code */\n};",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 129,
+        "title": "128. Which C++ Standard did add in-class default member initializers?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "C++98",
+            "C++11",
+            "C++14",
+            "C++17."
+        ],
+        "answer": "C++11"
+    },
+    {
+        "id": 130,
+        "title": "129. Can you use auto type deduction for non-static data members?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Yes, since C++11",
+            "No",
+            "Yes, since C++20"
+        ],
+        "answer": "No"
+    },
+    {
+        "id": 131,
+        "title": "130. Do you need to define a static inline data member in a cpp file?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "No, the definition happens at the same place where a static inline member is declared.",
+            "Yes, the compiler needs the definition in a cpp file.",
+            "Yes, the compiler needs a definition in all translation units that use this variable."
+        ],
+        "answer": "No, the definition happens at the same place where a static inline member is declared."
+    },
+    {
+        "id": 132,
+        "title": "131. What's the output of the following code:",
+        "text": null,
+        "code": null,
+        "code2": "struct S {\n    int a { 10 };\n    int b { 42 };\n};\nS s { 1 };\nstd::cout << s.a << \", \" << s.b;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 133,
+        "title": "132. Can a static inline variable be non-constant?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Yes, it's just a regular variable.",
+            "No, inline variables must be constant."
+        ],
+        "answer": "Yes, it's just a regular variable."
+    },
+    {
+        "id": 134,
+        "title": "133. Consider the following code:",
+        "text": null,
+        "code": null,
+        "code2": "struct C {\n    C(int x) : a(x) { }\n    int a { 10 };\n    int b { 42 };\n};\nC c(0);",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 135,
+        "title": "134. What happens when you throw an exception from a constructor?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "The object is considered \"created\" so it will follow the regular lifetime of an object.",
+            "The object is considered \"partially created,\" and thus, the compiler won't call its destructor.",
+            "he compiler calls std::terminate as you cannot throw exceptions from constructors."
+        ],
+        "answer": "The object is considered \"partially created,\" and thus, the compiler won't call its destructor."
+    },
+    {
+        "id": 136,
+        "title": "135. What happens when you compile this code?",
+        "text": null,
+        "code": null,
+        "code2": "struct Point { int x; int y; };\nPoint pt {.y = 10, .x = 11 };\nstd::cout << pt.x << \", \" << pt.y;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 137,
+        "title": "136. Will this code work in C++11?",
+        "text": null,
+        "code": null,
+        "code2": "struct User { std::string name = \"unknown\"; unsigned age { 0 }; };\nUser u { \"John\", 101 };",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 138,
+        "title": "137. Assume you have a std::map<string, int> m;. Select the single true statement about the following loop:",
+        "text": null,
+        "code": null,
+        "code2": "for (const pair<string, int>& elem : m)",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 139,
+        "title": "138. Identify the correct extension of the user-defined header file in C++.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            ".cpp",
+            ".hg",
+            ".h",
+            ".hf"
+        ],
+        "answer": ".h"
+    },
+    {
+        "id": 140,
+        "title": "139.Identify the incorrect constructor type.",
+        "text": null,
+        "code": null,
+        "code2": "auto x = 4000.22;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 141,
+        "title": "140.Which of the following data types is supported in C++ but not in C?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "bool",
+            "int",
+            "double",
+            "float"
+        ],
+        "answer": "bool"
+    },
+    {
+        "id": 142,
+        "title": "141. Identify the correct syntax for declaring arrays in C++.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "int arr[10]",
+            "array arr[10]",
+            "array{10}",
+            "int arr"
+        ],
+        "answer": "int arr[10]"
+    },
+    {
+        "id": 143,
+        "title": "142.Size of wchat_t is.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "2",
+            "4",
+            "2 or 4",
+            "Depends on the number of bits in the system"
+        ],
+        "answer": "Depends on the number of bits in the system"
+    },
+    {
+        "id": 144,
+        "title": "143.Which of the following loops is best when we know the number of iterations?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "while",
+            "for",
+            "do",
+            "All of the above"
+        ],
+        "answer": "for"
+    },
+    {
+        "id": 145,
+        "title": "144.Which keyword is used to define the macros in C++?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "#macro",
+            "#define",
+            "macro",
+            "keyword"
+        ],
+        "answer": "#define"
+    },
+    {
+        "id": 146,
+        "title": "145.Which of the following operators should be preferred to overload as a global function rather than a member method?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Postfix ++",
+            "Comparison Operator",
+            "Insertion Operator <<",
+            "Prefix++"
+        ],
+        "answer": "Comparison Operator"
+    },
+    {
+        "id": 147,
+        "title": "146.How can we restrict the dynamic allocation of objects of a class using new?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "By overloading new operator",
+            "By making an empty private new operator.",
+            "By making an empty private new and new[] operators",
+            "By overloading new operators and new[] operators"
+        ],
+        "answer": "By making an empty private new and new[] operators"
+    },
+    {
+        "id": 148,
+        "title": "147.What is the time complexity of the below code?",
+        "text": null,
+        "code": null,
+        "code2": "for(int i=0;i<n;i++){\n   for(int j=0;j<n;j++){\n       cout<<\"hello\";\n    }\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 149,
+        "title": "148.What is the output of the code given below?",
+        "text": null,
+        "code": null,
+        "code2": "int a=10;\nint k=++a;\nint m=a++;\ncout<<k+m;",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 150,
+        "title": "149. Which C++ construct is used for exception handling?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "try-catch",
+            "if-else",
+            "for loop",
+            "switch-case"
+        ],
+        "answer": "try-catch"
+    },
+    {
+        "id": 151,
+        "title": "150. What is the purpose of the `break` statement in a loop in C++?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Exit the program",
+            "Skip the current iteration and continue with the next one",
+            "Terminate the loop",
+            "Return a value"
+        ],
+        "answer": "Terminate the loop"
+    },
+    {
+        "id": 152,
+        "title": "151. In C++, what is the purpose of the `const` keyword when used with a variable?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "It makes the variable immutable",
+            "It changes the data type",
+            "It defines a constant function",
+            "It makes the variable a pointer"
+        ],
+        "answer": "It makes the variable immutable"
+    },
+    {
+        "id": 153,
+        "title": "152. Which is more effective while calling the C++ functions??",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "Call by reference",
+            "Call by value",
+            "Call by pointer",
+            "Call by object"
+        ],
+        "answer": "Call by reference"
+    },
+    {
+        "id": 154,
+        "title": "153. What will be the output of the following C++ program?",
+        "text": null,
+        "code": null,
+        "code2": "#include <iostream>\nusing namespace std;\nclass A{\npublic:\n\tA(){\n\t\tcout<<\"Constructor called\\n\";\n\t   }\n\t~A(){\n\t\tcout<<\"Destructor called\\n\";\n\t    }\n};\nint main(int argc, char const *argv[])\n{\n\tA *a = new A[5];\n\tdelete[] a;\n\treturn 0;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 155,
+        "title": ".154 What is the output of this code?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 156,
+        "title": ".155 Which choice is _not_ related to declaring the member variable count as static in my_class?",
+        "text": null,
+        "code": null,
+        "code2": "class my_class{\n    public: static int count;\n}",
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 157,
+        "title": "156. What is the purpose of the `constexpr` keyword in C++?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "It is used to define constants in C++.",
+            "`constexpr` is used to specify that a variable is a constant pointer.",
+            "`constexpr` is used to indicate that an expression can be evaluated at compile-time, making it suitable for use in constant expressions.",
+            "It is a keyword used to create asynchronous functions."
+        ],
+        "answer": "`constexpr` is used to indicate that an expression can be evaluated at compile-time, making it suitable for use in constant expressions."
+    },
+    {
+        "id": 158,
+        "title": "157. What is a template metaprogram in C++?",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [],
+        "answer": null
+    },
+    {
+        "id": 159,
+        "title": "158.Identify the correct example for a pre-increment operator.",
+        "text": null,
+        "code": null,
+        "code2": null,
+        "choices": [
+            "++i",
+            "i++",
+            "--i",
+            "+i"
+        ],
+        "answer": "++i"
+    },
+    {
+        "id": 160,
+        "title": "159. What will be the output of following code?",
+        "text": null,
+        "code": null,
+        "code2": "{% raw %}\nint matrix[3][3] = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};\nfor(int i=0;i<3;i++){\n    for(int j=0;j<3;j++){\n        int a = mat[i][j];\n        mat[i][j] = mat[j][i];\n        mat[j][i] = a;\n    }\n}\n{% endraw %}",
+        "choices": [],
+        "answer": null
+    }
+]
